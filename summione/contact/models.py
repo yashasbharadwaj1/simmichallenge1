@@ -1,9 +1,10 @@
 from django.db import models
+from django.utils import timezone
 class Contact(models.Model):
     Name = models.CharField(max_length=25)
     City = models.CharField(max_length=25)
     State=models.CharField(max_length=25)
-    Createdate = models.DateTimeField(auto_now_add=True)
+    Createdate = models.DateTimeField(default=timezone.now)
     Phonenumber = models.CharField(max_length=20)
     Email=models.EmailField( max_length=254)
     class Meta:
