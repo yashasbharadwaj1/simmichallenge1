@@ -25,3 +25,6 @@ py manage.py migrate
 py manage.py runserver 
 py manage.py createsuperuser 
 admin ---admin 
+define views -->contact app
+define urls---->contact app 
+define templates ---> contact app 

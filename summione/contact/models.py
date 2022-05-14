@@ -13,4 +13,5 @@ class Contact(models.Model):
     
     #By default, the result is sorted ascending (the lowest value first), to change the direction to descending (the highest value first), use the minus sign (NOT), - in front of the field name:
     def __str__(self):
-        return self.Name
+        return self.Name 
+        

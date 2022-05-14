@@ -1,0 +1,15 @@
+{% extends "../base/base.html" %}
+{% block title %}
+Welcome 
+{% endblock %}
+{% block content %}
+{% include "base/nav-main.html" %}
+{%for post in posts%}
+<p>{{post.Name}}</p>
+<p>{{post.City}}</p>
+{% endfor %}
+{% include "base/footer.html" %}
+{% endblock %}
+
+
+
