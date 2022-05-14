@@ -1,0 +1,12 @@
+first thing is not to overthink and to do what is asked to be done 
+
+py -m venv myenv 
+myenv\scripts\activate 
+pip install django
+django-admin startproject summione
+cd summione      
+django-admin startapp account
+settings.py ----> 'account',
+django-admin startapp contact   
+settings.py ----> 'contact',
+connecting it to php my admin 
