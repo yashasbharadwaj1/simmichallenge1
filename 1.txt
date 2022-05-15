@@ -28,3 +28,6 @@ admin ---admin
 define views -->contact app
 define urls---->contact app 
 define templates ---> contact app 
+define views -->account app
+define urls---->account app 
+define templates ---> account app login.html csrf token 

@@ -1,0 +1,16 @@
+{%extends "../base/base.html"%} 
+
+{%block title%}Login{%endblock%} 
+{%block content%}
+{%include "base/nav-main.html"%}
+<div class="login-form">
+    <form action=" {% url "account:login" %} " method="post"> 
+        {{form.as_p}} 
+        {%csrf_token %} 
+        <input type="hidden" name="next" value="{{next}}" />    
+        <p><input type="submit" value="Login"></p> 
+    </form>
+</div>
+
+{% include "base/footer.html" %}
+{%endblock%}

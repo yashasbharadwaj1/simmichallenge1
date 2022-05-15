@@ -1,13 +1,32 @@
 {% extends "../base/base.html" %}
-{% block title %}
-Welcome 
-{% endblock %}
+
 {% block content %}
-{% include "base/nav-main.html" %}
-{%for post in posts%}
-<p>{{post.Name}}</p>
-<p>{{post.City}}</p>
+{% include "../base/nav-main.html" %}
+
+
+{%for contact in contacts%}
+<div class="dropdown-divider"></div>
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{contact.Name}}</h5>
+      
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{contact.City}}</li>
+      <li class="list-group-item">{{contact.State}}</li>
+      <li class="list-group-item">{{contact.Phonenumber}}</li>
+      <li class="list-group-item">{{contact.Email}}</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+  <div class="dropdown-divider"></div>
+
 {% endfor %}
+
 {% include "base/footer.html" %}
 {% endblock %}
 
