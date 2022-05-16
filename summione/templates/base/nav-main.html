@@ -34,14 +34,15 @@
               
            
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{% url "account:logout" %}">Logout</a>
+                <a class="dropdown-item" href="{% url "account:logout" %}">logout</a>
             </div>
         </li>
     </ul>
     {% else %}
     <nav>
         
-        <a class="p-2 text-dark" href="{% url "account:login" %}">Login</a>
+        <a class="p-2 text-dark" href="{% url "account:login" %}">login</a>
+      
     </nav>
     {% endif %}
 </div>
