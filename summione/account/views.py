@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.contrib import messages
 from django.contrib.auth.models import User,auth
-from .models import Profile
+
 
 @login_required
 def profile(request):
